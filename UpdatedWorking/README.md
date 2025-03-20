@@ -1,5 +1,13 @@
 # MyShell User Manual
 
+## Group 1
+Done by:
+- Abdullah Hanoosh, Student ID: 100749026
+- Malyka Sardar, Student ID: 100752640
+- Marwan Alam, Student ID: 100842087
+- Vidurshan Sribalasuhabiramam, Student ID: 100558257
+
+
 ## Internal Commands
 - `cd <directory>`: Change the current directory.
 - `clr`: Clear the screen.
@@ -19,9 +27,3 @@ To run the shell in batch mode, provide a file containing commands as an argumen
 ./myshell commands.txt
 
 
-## Group 1
-Done by:
-- Abdullah Hanoosh, Student ID: 100749026
-- Malyka Sardar, Student ID: 100752640
-- Marwan Alam, Student ID: 100842087
-- Vidurshan Sribalasuhabiramam, Student ID: 100558257
