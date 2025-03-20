@@ -1,5 +1,7 @@
 all: myshell
+
 myshell: myshell.c utility.c
-gcc -o myshell myshell.c utility.c -I.
+	gcc -Wall -o myshell myshell.c utility.c -I.
+	
 clean:
-rm -f myshell
+	rm -f myshell
