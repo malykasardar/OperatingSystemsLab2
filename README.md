@@ -1,17 +1,19 @@
-# MyShell Project
-This project implements a simple shell in C, capable of interpreting basic commands, like `cd` to change the working directory.
-## Files Included
-- `myshell.c`: Contains the core logic for interacting with the user and executing commands.
-- `utility.c`: Contains utility functions like `change_directory` for the `cd` command.
-- `myshell.h`: Header file that defines the interface for the shell's functions.
-- `Makefile`: Used to automate the build process.
-- `README.md`: Documentation for the project.
-## Compilation and Usage
-To compile the shell, run: make
-To start the shell, run: ./myshell
-## Example Usage
-MyShell> cd /tmp # Changes directory to /tmp
-MyShell> cd # Prints the current working directory
-MyShell> unknown # Prints "Command not recognized."
-To clean up compiled files:
-$ make clean
+# MyShell User Manual
+
+## Internal Commands
+- `cd <directory>`: Change the current directory.
+- `clr`: Clear the screen.
+- `dir <directory>`: List the contents of a directory.
+- `environ`: List all environment variables.
+- `echo <comment>`: Display a comment.
+- `help`: Display this user manual.
+- `pause`: Pause the shell until 'Enter' is pressed.
+- `quit`: Quit the shell.
+
+## External Commands
+All other commands are treated as external commands and executed using `execvp`.
+
+## Batch Mode
+To run the shell in batch mode, provide a file containing commands as an argument:
+```bash
+./myshell commands.txt
